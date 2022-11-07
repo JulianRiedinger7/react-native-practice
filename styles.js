@@ -1,9 +1,8 @@
-import { StyleSheet } from 'react-native';
+import { Dimensions, StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		backgroundColor: '#f1f1f1',
 		justifyContent: 'center',
 		alignItems: 'center',
 		paddingHorizontal: 20,
@@ -14,10 +13,11 @@ export const styles = StyleSheet.create({
 	title: {
 		fontSize: 70,
 		fontWeight: 'bold',
+		color: '#fff',
 	},
 	subtitle: {
 		fontSize: 20,
-		color: 'gray',
+		color: '#efefef',
 	},
 	inputsContainer: {
 		marginTop: 20,
@@ -30,12 +30,21 @@ export const styles = StyleSheet.create({
 		fontSize: 16,
 		marginVertical: 10,
 		width: 300,
+		alignSelf: 'center',
 	},
 	createAccount: {
 		marginTop: 50,
 		flexDirection: 'row',
+		alignSelf: 'center',
 	},
 	create: {
 		fontWeight: 'bold',
+		color: '#fff',
+	},
+	image: {
+		flex: 1,
+		justifyContent: 'center',
+		width: Dimensions.get('window').width,
+		paddingHorizontal: 20,
 	},
 });
